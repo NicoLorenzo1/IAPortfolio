@@ -128,6 +128,13 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-ghost`,
+            options: {
+              apiUrl: 'http://localhost:2368', // Cambia esto a tu URL de Ghost
+              contentApiKey: '3430d7de3f271979e661db394d'
+            },
+          },
+        {
             resolve: `gatsby-plugin-advanced-sitemap`,
             options: {
                 query: `
